@@ -1,4 +1,7 @@
 import logo from '../images/logo.svg'
+import Navlink from './Navlink'
+import { pageLinks, socialLinks } from '../data'
+import SocialLink from './SocialLink'
 
 const Navbar = () => {
   return (
@@ -12,60 +15,15 @@ const Navbar = () => {
         </div>
         {/* <!-- left this comment on purpose --> */}
         <ul className="nav-links" id="nav-links">
-          <li>
-            <a href="#home" className="nav-link">
-              home
-            </a>
-          </li>
-
-          <li>
-            <a href="#about" className="nav-link">
-              about
-            </a>
-          </li>
-
-          <li>
-            <a href="#services" className="nav-link">
-              services
-            </a>
-          </li>
-
-          <li>
-            <a href="#tours" className="nav-link">
-              {' '}
-              tours
-            </a>
-          </li>
+          {pageLinks.map((item) => (
+            <Navlink link={item.href} text={item.text} key={item.id} />
+          ))}
         </ul>
 
         <ul className="nav-icons">
-          <li>
-            <a
-              href="https://www.twitter.com"
-              target="_blank"
-              className="nav-icon"
-            >
-              <i className="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.twitter.com"
-              target="_blank"
-              className="nav-icon"
-            >
-              <i className="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.twitter.com"
-              target="_blank"
-              className="nav-icon"
-            >
-              <i className="fab fa-squarespace"></i>
-            </a>
-          </li>
+          {socialLinks.map((item) => (
+            <SocialLink key={item.id} link={item.href} icon={item.iconName} />
+          ))}
         </ul>
       </div>
     </nav>
