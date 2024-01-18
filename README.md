@@ -1,4 +1,4 @@
-# Tour Service Landing Page
+# Backroads
 
 This project is a simple landing page for a tour service company built using React.js. The primary focus of this project is to showcase the implementation of React components, props, and other fundamental concepts.
 
@@ -24,8 +24,6 @@ This project is a simple landing page for a tour service company built using Rea
 ```bash
 git clonegit clone https://github.com/UzairKhan313/BackRoads.git
 ```
-
-````
 
 2. Change into the project directory:
 
@@ -78,4 +76,3 @@ Feel free to customize the folder structure based on your preferences.
 Contributions are welcome! Feel free to open issues or pull requests for any improvements or features you'd like to add.
 
 Make sure to replace placeholder URLs, project structure, and other details with your actual project information.
-````
